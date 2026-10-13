@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIN SEMEN</title>
+
+  <style>
+    body {
+      background: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    button {
+      background: black;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      padding: 25px 35px;
+      border: 3px solid black;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    #mensaje {
+      display: none;
+      font-size: clamp(55px, 12vw, 150px);
+      font-weight: 900;
+      line-height: 1.1;
+      padding: 20px;
+      overflow-wrap: anywhere;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button id="boton" onclick="mostrarMensaje()">
+    Hola Esteban, sabemos quien eres, pulsa aquí para saber como.
+  </button>
+
+  <div id="mensaje">
+    Esteban Satizabal Franco, sabemos que vives en brisa de los alamos, tu madre se llama Ivonne 
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById("boton").style.display = "none";
+      document.getElementById("mensaje").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
